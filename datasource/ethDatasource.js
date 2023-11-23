@@ -13,7 +13,7 @@ class EtherDataSource extends RESTDataSource {
     this.baseURL = "https://api.etherscan.io/api";
   }
 
-  // Method to get ETH balance for an Ethereum address
+  // Method to get ETH balance for an Ethereum address 
   async etherBalanceByAddress() {
     return this.get(
       `?module=account&action=balance&address=${eth_address}&tag=latest&apikey=${process.env.ETHERSCAN_API}`
